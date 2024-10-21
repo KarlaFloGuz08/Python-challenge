@@ -4,7 +4,7 @@ import csv
 import os
 
 # Files to load and output (update with correct file paths)
-file_to_load = file_to_load = "/Users/karla/Python-challenge/PyBank/Resources/budget_data.csv"
+file_to_load = "/Users/karla/Python-challenge/PyBank/Resources/budget_data.csv"
  # Input file path
 file_to_output = file_to_output = "/Users/karla/Python-challenge/PyBank/analysis/budget_analysis.txt"
  # Output file path
