@@ -4,14 +4,14 @@ import os
 
 # Files to load and output (update with correct file paths)
 
-# Files to load and output (update with correct file paths)
-#file_to_load = os.path.join("Resources", "election_data.csv")  # Input file path
+#Load file path
 file_to_load = "/Users/karla/Python-challenge/PyPoll/Resources/election_data.csv"
-#file_to_output = os.path.join("analysis", "election_analysis.txt")  # Output file path
+
+# Output file path
 file_to_output = "/Users/karla/Python-challenge/PyPoll/analysis/election_analysis.txt"
 
 # Initialize variables to track the election data
-total_votes = 0  # Track the total number of votes cast
+votes_total = 0  # Track the total number of votes cast
 
 # Define a dictionary to track candidate names and vote counts
 candidate_votes = {}
@@ -33,7 +33,7 @@ with open(file_to_load) as election_data:
         print(". ", end="")
 
         # Increment the total vote count for each row
-        total_votes += 1
+        votes_total += 1
 
         # Get the candidate's name from the row
         candidate_name = row[2]  # Assuming the candidate's name is in the third column
@@ -51,7 +51,7 @@ with open(file_to_output, "w") as txt_file:
     # Print the total vote count (to terminal)
     output = f"Election Results\n"
     output += f"-------------------------\n"
-    output += f"Total Votes: {total_votes}\n"
+    output += f"Total Votes: {votes_total}\n"
     output += f"-------------------------\n"
     print(output)  # Print to terminal
     txt_file.write(output)  # Write to the text file
@@ -59,7 +59,7 @@ with open(file_to_output, "w") as txt_file:
     # Loop through the candidates to determine vote percentages and identify the winner
     for candidate, votes in candidate_votes.items():
         # Calculate the percentage of votes
-        vote_percentage = (votes / total_votes) * 100
+        vote_percentage = (votes / votes_total) * 100
 
         # Update the winning candidate if this one has more votes
         if votes > winning_count:
@@ -74,8 +74,7 @@ with open(file_to_output, "w") as txt_file:
     # Generate and print the winning candidate summary
     winning_summary = f"-------------------------\n"
     winning_summary += f"Winner: {winning_candidate}\n"
-    winning_summary += f"Winning Vote Count: {winning_count}\n"
-    winning_summary += f"Winning Percentage: {(winning_count / total_votes) * 100:.3f}%\n"
+
 
     # Print winning candidate summary
     print(winning_summary)  # Print to terminal

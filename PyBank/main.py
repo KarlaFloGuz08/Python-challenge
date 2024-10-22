@@ -13,7 +13,7 @@ file_to_output = "/Users/karla/Python-challenge/PyBank/analysis/budget_analysis.
 total_months = 0
 total_net = 0
 net_change_list = []
-month_of_change = []
+month_change = []
 greatest_increase = ["", 0]
 greatest_decrease = ["", 0]
 previous_net = 0
@@ -41,7 +41,7 @@ with open(file_to_load) as financial_data:
         net_change = int(row[1]) - previous_net
         previous_net = int(row[1])
         net_change_list.append(net_change)
-        month_of_change.append(row[0])
+        month_change.append(row[0])
 
         # Calculate the greatest increase in profits (month and amount)
         if net_change > greatest_increase[1]:
@@ -57,7 +57,7 @@ average_change = sum(net_change_list) / len(net_change_list)
 # Generate the output summary
 output = (
     f"Financial Analysis\n"
-    f"----------------------------\n"
+    f"--------------------------------------\n"
     f"Total Months: {total_months}\n"
     f"Total: ${total_net}\n"
     f"Average Change: ${average_change:.2f}\n"
