@@ -26,6 +26,7 @@ This repository contains solutions for two Python challenges: PyBank and PyPoll.
 Description:
 
 In the PyBank challenge, you will analyze financial records from a dataset (budget_data.csv) with two columns: Date and Profit/Loss. 
+
 The goal is to compute various financial metrics to gain insights into the company's performance.
 
 Requirements
@@ -56,7 +57,10 @@ The results look like this:
 Description:
 
 The PyPoll challenge focuses on modernizing the vote-counting process for a rural town using a dataset (election_data.csv). 
-This dataset has three columns: Voter ID, County, and Candidate. The objective is to analyze the voting data and produce a report summarizing the election results.
+
+This dataset has three columns: Voter ID, County, and Candidate. 
+
+The objective is to analyze the voting data and produce a report summarizing the election results.
 
 Requirements
 
@@ -83,5 +87,5 @@ The results look like this:
 
 
 ## Conclusion
-Both challenges provide a practical introduction to data analysis using Python. By completing these projects, you'll gain valuable experience in data manipulation, analysis, and reporting.
+Both challenges provide a practical introduction to data analysis using Python.  These projects helped to gain valuable experience in data manipulation, analysis, and reporting.
 
