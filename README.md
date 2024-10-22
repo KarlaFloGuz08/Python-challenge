@@ -23,7 +23,8 @@ This repository contains solutions for two Python challenges: PyBank and PyPoll.
 ## PyBank ![image](https://github.com/user-attachments/assets/f291975b-216d-4a53-92b8-5091b253bacf)
 
 
-Description
+Description:
+
 In the PyBank challenge, you will analyze financial records from a dataset (budget_data.csv) with two columns: Date and Profit/Loss. 
 The goal is to compute various financial metrics to gain insights into the company's performance.
 
@@ -52,7 +53,8 @@ The results look like this:
 ##  PyPoll ![image](https://github.com/user-attachments/assets/cde16e59-34c6-40ff-bcad-1f5b5189b91a)
 
 
-Description
+Description:
+
 The PyPoll challenge focuses on modernizing the vote-counting process for a rural town using a dataset (election_data.csv). 
 This dataset has three columns: Voter ID, County, and Candidate. The objective is to analyze the voting data and produce a report summarizing the election results.
 
